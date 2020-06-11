@@ -6,23 +6,44 @@ function romanNumeralConverter (number) {
 
     if (number >= 1000) {
       const timesDivisibleBy = Math.floor(number / 1000);
-      number = number - (1000 * timesDivisibleBy);
-      for (let i =timesDivisibleBy; i > 0; i--) {
-      numeralArray.push("M");
+      if (timesDivisibleBy > 3) {
+        for (let i =timesDivisibleBy -1; i > 0; i--) {
+          numeralArray.push("M");
+        }
+        numeralArray.push("M")
+      } else {
+        for (let i =timesDivisibleBy; i > 0; i--) {
+          numeralArray.push("M");
+        }
+        number = number - (1000 * timesDivisibleBy);
       }
 
     } else if (number >= 500) {
       const timesDivisibleBy = Math.floor(number / 500);
-      number = number - (500 * timesDivisibleBy);
-      for (let i =timesDivisibleBy; i > 0; i--) {
-      numeralArray.push("D");
+      if (timesDivisibleBy > 3) {
+        for (let i =timesDivisibleBy -1; i > 0; i--) {
+          numeralArray.push("D");
+        }
+        numeralArray.push("IC")
+      } else {
+        for (let i =timesDivisibleBy; i > 0; i--) {
+          numeralArray.push("D");
+        }
+        number = number - (500 * timesDivisibleBy);
       }
 
     } else if (number >= 100) {
       const timesDivisibleBy = Math.floor(number / 100);
-      number = number - (100 * timesDivisibleBy);
-      for (let i =timesDivisibleBy; i > 0; i--) {
-      numeralArray.push("C");
+      if (timesDivisibleBy > 3) {
+        for (let i =timesDivisibleBy -1; i > 0; i--) {
+          numeralArray.push("C");
+        }
+        numeralArray.push("ID")
+      } else {
+        for (let i =timesDivisibleBy; i > 0; i--) {
+          numeralArray.push("C");
+        }
+        number = number - (500 * timesDivisibleBy);
       }
 
     } else if (number >= 50) {
