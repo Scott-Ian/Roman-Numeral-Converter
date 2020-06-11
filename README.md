@@ -32,10 +32,10 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ## Specifications
 
-_The program does nothing to non-number characters_
-* Example Input: Hello
-* Example Output: Hello
-* _Is Complete_: _False_
+_The program does not accept non-numeral characters_
+* Example Input: N/A
+* Example Output: N/A
+* _Is Complete_: _True_
 
 _The program will return the correct number of "I" symbols for input numbers between 1 and 3_
 * Example Input: 2
