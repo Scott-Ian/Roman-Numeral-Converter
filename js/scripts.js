@@ -1,4 +1,15 @@
 // Business Logic
+function romanNumeralConverter (number) {
+  let numeralArray = [];
+
+  for (number; number > 0; number--) {
+    numeralArray.push("I");
+  }
+
+  const numeralString = numeralArray.join("");
+
+  return numeralString;
+}
 
 
 
@@ -6,7 +17,11 @@
 $(document).ready(function(){
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    const userInput = $("#numeral").val();
-    $("#results").text(userInput)
+    const userInput = parseInt($("input#numeral").val());
+    console.log(`User Input: ${userInput}`);
+
+    const results = romanNumeralConverter (userInput);
+
+    $("#results").text(results)
   });
 });

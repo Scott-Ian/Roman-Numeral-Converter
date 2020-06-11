@@ -40,7 +40,7 @@ _The program does not accept non-numeral characters_
 _The program will return the correct number of "I" symbols for input numbers between 1 and 3_
 * Example Input: 2
 * Example Output: II
-* _Is Complete_: _False_
+* _Is Complete_: _True_
 
 _The program will return "V", "VI", "VII", "VIII" for input numbers between 5 and 8 _
 * Example Input: 6
