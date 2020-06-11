@@ -77,6 +77,11 @@ _The program will return Roman Numerals for numbers greater than 999, but less t
 * Example Output: MMXVIII
 * _Is Complete_: _False_
 
+_The program will return an alert for numbers greater than 3,999_
+* Example Input: 5000
+* Example Output: Please submit a number smaller than 4000
+* _Is Complete_: _False_
+
 ### License
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
